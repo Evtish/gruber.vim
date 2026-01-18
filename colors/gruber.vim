@@ -7,16 +7,17 @@ endif
 set background=dark
 let g:colors_name = "gruber"
 
-let s:black  = ["#1c1c1c", "234"]
-let s:blue   = ["#87afd7", "111"]
-let s:brown  = ["#d78700", "172"]
-let s:cyan   = ["#5fd7d7", "80" ]
-let s:gray   = ["#262626", "235"]
-let s:green  = ["#87d75f", "113"]
-let s:red    = ["#ff5f5f", "203"]
-let s:white  = ["#e4e4e4", "254"]
-let s:yellow = ["#ffffaf", "229"]
-let s:orange = ["#ffaf00", "214"]
+let s:black  		= ["#1c1c1c", "234"]
+let s:blue   		= ["#87afd7", "111"]
+let s:brown  		= ["#d78700", "172"]
+let s:cyan   		= ["#5fd7d7", "80" ]
+let s:gray   		= ["#262626", "235"]
+let s:light_grey	= ["#878787", "102"]
+let s:green  		= ["#87d75f", "113"]
+let s:red    		= ["#ff5f5f", "203"]
+let s:white  		= ["#eeeeee", "255"]
+let s:yellow 		= ["#ffffaf", "229"]
+let s:orange 		= ["#ffaf00", "214"]
 
 let s:bold      = "bold"
 let s:italic    = "italic"
@@ -106,3 +107,4 @@ call s:hl("WildMenu",       { "fg": s:black, "bg": s:yellow, "style": s:bold })
 call s:hl("diffAdded",      { "fg": s:green })
 call s:hl("diffRemoved",    { "fg": s:red })
 call s:hl("diffSubname",    { "fg": s:blue })
+call s:hl("LineNr",			{ "fg": s:light_grey })

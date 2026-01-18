@@ -3,7 +3,7 @@ highlight clear
 if exists("syntax_on")
     syntax reset
 endif
-
+" TODO: ewrerr
 set background=dark
 let g:colors_name = "gruber"
 
@@ -12,12 +12,12 @@ let s:blue   		= ["#87afd7", "111"]
 let s:brown  		= ["#d78700", "172"]
 let s:cyan   		= ["#5fd7d7", "80" ]
 let s:gray   		= ["#262626", "235"]
-let s:light_grey	= ["#878787", "102"]
+let s:light_gray	= ["#878787", "102"]
 let s:green  		= ["#87d75f", "113"]
 let s:red    		= ["#ff5f5f", "203"]
 let s:white  		= ["#eeeeee", "255"]
-let s:yellow 		= ["#ffffaf", "229"]
-let s:orange 		= ["#ffaf00", "214"]
+let s:light_yellow	= ["#ffffaf", "229"]
+let s:yellow 		= ["#ffdd33", "220"]
 
 let s:bold      = "bold"
 let s:italic    = "italic"
@@ -74,14 +74,14 @@ call s:hl("FoldColumn",     { "fg": s:brown, "bg": s:gray })
 call s:hl("Folded",         { "fg": s:brown, "bg": s:gray, "style": s:italic })
 call s:hl("Function",       { "fg": s:blue })
 call s:hl("Identifier",     { "fg": s:white })
-call s:hl("Ignore",         { "fg": s:black })
-call s:hl("MatchParen",     { "fg": s:yellow, "style": s:bold })
+call s:hl("Ignore",         { "fg": s:light_gray })
+call s:hl("MatchParen",     { "fg": s:light_yellow, "style": s:bold })
 call s:hl("MoreMsg",        { "fg": s:green })
 call s:hl("NonText",        { "fg": s:blue })
 call s:hl("Normal",         { "fg": s:white, "bg": s:black })
 call s:hl("Pmenu",          { "fg": s:white, "bg": s:gray })
 call s:hl("PmenuSbar",      { "bg": s:gray })
-call s:hl("PmenuSel",       { "fg": s:black, "bg": s:yellow, "style": s:bold })
+call s:hl("PmenuSel",       { "fg": s:black, "bg": s:light_yellow, "style": s:bold })
 call s:hl("PmenuThumb",     { "bg": s:black })
 call s:hl("PreProc",        { "fg": s:cyan })
 call s:hl("Question",       { "fg": s:blue })
@@ -91,20 +91,20 @@ call s:hl("SpecialComment", { "fg": s:brown })
 call s:hl("SpecialKey",     { "fg": s:blue })
 call s:hl("SpellBad",       { "fg": s:red, "style": s:underline })
 call s:hl("SpellCap",       { "fg": s:blue, "style": s:underline })
-call s:hl("SpellLocal",     { "fg": s:yellow, "style": s:underline })
+call s:hl("SpellLocal",     { "fg": s:light_yellow, "style": s:underline })
 call s:hl("SpellRare",      { "style": s:underline })
-call s:hl("Statement",      { "fg": s:yellow, "style": s:bold })
+call s:hl("Statement",      { "fg": s:light_yellow, "style": s:bold })
 call s:hl("StatusLine",     { "fg": s:white, "bg": s:gray, "style": s:bold })
 call s:hl("StatusLineNC",   { "fg": s:white, "bg": s:gray })
 call s:hl("String",         { "fg": s:green })
 call s:hl("Title",          { "fg": s:white })
-call s:hl("Todo",           { "fg": s:black, "bg": s:orange })
-call s:hl("Type",           { "fg": s:yellow, "style": s:bold })
+call s:hl("Todo",           { "fg": s:brown, "bg": s:yellow, "style": s:bold })
+call s:hl("Type",           { "fg": s:light_yellow, "style": s:bold })
 call s:hl("Underlined",     { "style": s:underline })
 call s:hl("VertSplit",      { "fg": s:gray })
-call s:hl("WarningMsg",     { "fg": s:yellow })
+call s:hl("WarningMsg",     { "fg": s:light_yellow })
 call s:hl("WildMenu",       { "fg": s:black, "bg": s:yellow, "style": s:bold })
 call s:hl("diffAdded",      { "fg": s:green })
 call s:hl("diffRemoved",    { "fg": s:red })
 call s:hl("diffSubname",    { "fg": s:blue })
-call s:hl("LineNr",			{ "fg": s:light_grey })
+call s:hl("LineNr",			{ "fg": s:light_gray })

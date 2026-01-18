@@ -8,14 +8,15 @@ set background=dark
 let g:colors_name = "gruber"
 
 let s:black  = ["#1c1c1c", "234"]
-let s:blue   = ["#87afd7", "110"]
-let s:brown  = ["#af875f", "137"]
-let s:cyan   = ["#afd7af", "151"]
+let s:blue   = ["#87afd7", "111"]
+let s:brown  = ["#d78700", "172"]
+let s:cyan   = ["#5fd7d7", "80" ]
 let s:gray   = ["#262626", "235"]
 let s:green  = ["#87d75f", "113"]
 let s:red    = ["#ff5f5f", "203"]
 let s:white  = ["#e4e4e4", "254"]
-let s:yellow = ["#ffd700", "220"]
+let s:yellow = ["#ffffaf", "229"]
+let s:orange = ["#ffaf00", "214"]
 
 let s:bold      = "bold"
 let s:italic    = "italic"
@@ -96,7 +97,7 @@ call s:hl("StatusLine",     { "fg": s:white, "bg": s:gray, "style": s:bold })
 call s:hl("StatusLineNC",   { "fg": s:white, "bg": s:gray })
 call s:hl("String",         { "fg": s:green })
 call s:hl("Title",          { "fg": s:white })
-call s:hl("Todo",           { "fg": s:brown, "style": s:italic })
+call s:hl("Todo",           { "fg": s:black, "bg": s:orange })
 call s:hl("Type",           { "fg": s:yellow, "style": s:bold })
 call s:hl("Underlined",     { "style": s:underline })
 call s:hl("VertSplit",      { "fg": s:gray })
